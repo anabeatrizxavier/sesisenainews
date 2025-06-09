@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SESI/SENAI News - Portal de Notícias</title>
+    <title>SENAI / SESI News - Portal de Notícias</title>
     <style>
         /* Reset de CSS */
         * {
@@ -695,7 +695,7 @@
             right: 20px;
             width: 60px;
             height: 60px;
-            background: linear-gradient(135deg, var(--primary-orange) 0%, var(--secondary-orange) 100%);
+            background: linear-gradient(135deg, var(--primary-orange) 0%, var(--primary-blue) 100%);
             border-radius: 50%;
             cursor: pointer;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -748,7 +748,7 @@
         }
 
         .chat-header {
-            background: linear-gradient(135deg, var(--primary-orange) 0%, var(--secondary-orange) 100%);
+            background: linear-gradient(135deg, var(--primary-orange) 0%, var(--primary-blue) 100%);
             color: var(--white);
             padding: 15px 20px;
             display: flex;
@@ -794,7 +794,7 @@
         }
 
         .chat-messages::-webkit-scrollbar-thumb {
-            background: var(--primary-orange);
+            background: linear-gradient(135deg, var(--primary-orange) 0%, var(--primary-blue) 100%);
             border-radius: 5px;
         }
 
@@ -819,7 +819,7 @@
 
         .message.user {
             align-self: flex-end;
-            background: var(--primary-orange);
+            background: linear-gradient(135deg, var(--primary-orange) 0%, var(--primary-blue) 100%);
             color: var(--white);
             border-bottom-right-radius: 5px;
         }
@@ -852,7 +852,7 @@
             width: 8px;
             height: 8px;
             border-radius: 50%;
-            background: var(--primary-orange);
+            background: linear-gradient(135deg, var(--primary-orange) 0%, var(--primary-blue) 100%);
             margin: 0 2px;
             animation: typing 1.4s infinite;
         }
@@ -894,11 +894,11 @@
 
         .chat-input:focus {
             outline: none;
-            border-color: var(--primary-orange);
+            border-color: var(--primary-blue);
         }
 
         .chat-send {
-            background: var(--primary-orange);
+            background: linear-gradient(135deg, var(--primary-orange) 0%, var(--primary-blue) 100%);
             color: var(--white);
             border: none;
             padding: 10px;
@@ -913,7 +913,7 @@
         }
 
         .chat-send:hover {
-            background: var(--dark-orange);
+            background: linear-gradient(135deg, var(--dark-orange) 0%, var(--dark-blue) 100%);
             transform: scale(1.1);
         }
 
@@ -1075,6 +1075,18 @@
             }
         }
 
+        /* Contact Form Button */
+        #contact-form-card .btn {
+            background: var(--medium-gray);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        #contact-form-card .btn:hover {
+            background: var(--dark-gray);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
         /* Modal Styles */
         .modal {
             display: none; /* Hidden by default */
@@ -1146,7 +1158,7 @@
 <body>
     <header>
         <div class="header-container">
-            <div class="logo">SESI/SENAI News</div>
+            <div class="logo">SENAI / SESI News</div>
             <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
             <nav id="mainNav">
                 <ul>
@@ -1166,7 +1178,7 @@
         <div class="container">
             <section id="home" class="page-section active">
                 <div class="hero home-hero">
-                    <h1>Bem-vindo ao SESI/SENAI News</h1>
+                    <h1>Bem-vindo ao SENAI / SESI News</h1>
                     <p>Seu portal de notícias e informações da comunidade escolar</p>
                 </div>
 
@@ -1510,7 +1522,7 @@
 
                 <div id="about-history-card" class="card">
                     <h2 style="color: var(--black);">Nossa História</h2>
-                    <p>O SESI e o SENAI são instituições de ensino que atuam na formação profissional e na promoção da qualidade de vida dos trabalhadores da indústria. Com uma história de décadas, temos contribuído significativamente para o desenvolvimento educacional e industrial do Brasil.</p>
+                    <p>O SENAI e o SESI são instituições de ensino que atuam na formação profissional e na promoção da qualidade de vida dos trabalhadores da indústria. Com uma história de décadas, temos contribuído significativamente para o desenvolvimento educacional e industrial do Brasil.</p>
                 </div>
 
                 <div id="about-mission-card" class="card">
@@ -1563,7 +1575,7 @@
                     <div id="contact-info-email-card" class="contact-item">
                         <div class="contact-icon">📧</div>
                         <h3>Email</h3>
-                        <p>contato@sesisenai.com.br</p>
+                        <p>contato@senaisesi.com.br</p>
                     </div>
                     <div id="contact-info-address-card" class="contact-item">
                         <div class="contact-icon">📍</div>
@@ -1576,7 +1588,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 SESI/SENAI News. Todos os direitos reservados.</p>
+        <p>&copy; 2025 SENAI / SESI News. Todos os direitos reservados.</p>
         <div class="social-links">
             <a href="#" aria-label="Facebook">📘</a>
             <a href="#" aria-label="Instagram">📸</a>
@@ -1603,12 +1615,12 @@
 
     <div class="chat-container" id="chatContainer">
         <div class="chat-header">
-            <h3>Assistente Virtual SESI/SENAI</h3>
+            <h3>Assistente Virtual SENAI / SESI</h3>
             <button class="chat-close" onclick="toggleChat()">✕</button>
         </div>
         <div class="chat-messages" id="chatMessages">
             <div class="message bot">
-                <div>Olá! 👋 Sou o assistente virtual do SESI/SENAI. Como posso ajudá-lo hoje?</div>
+                <div>Olá! 👋 Sou o assistente virtual do SENAI / SESI. Como posso ajudá-lo hoje?</div>
                 <div class="message-time">Agora</div>
             </div>
         </div>
